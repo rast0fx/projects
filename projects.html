@@ -1,251 +1,272 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Projects | Mhamad Koussa</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://i.postimg.cc/htq890YQ/Your-idea-1.png"
-    />
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { primary: "#6b8cae", secondary: "#a3c1d9" },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: 'Work Sans', sans-serif;
-        background-color: #f8fafc;
-        color: #334155;
-      }
-      .retro-text {
-        font-family: 'Space Mono', monospace;
-      }
-      .project-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-      }
-      .retro-border {
-        border: 2px solid #6b8cae;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Navigation -->
-    <header class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
-      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="index.html" class="text-xl font-bold text-gray-800">Mhamad Koussa</a>
-        <nav class="hidden md:block">
-          <ul class="flex space-x-8">
-            <li><a href="https://mhamadkoussa.netlify.app/#hero" class="text-gray-600 hover:text-primary transition-colors">Home</a></li>
-            <li><a href="https://mhamadkoussa.netlify.app/#about" class="text-gray-600 hover:text-primary transition-colors">About</a></li>
-            <li><a href="https://mhamadkoussa.netlify.app/#projects" class="text-gray-600 hover:text-primary transition-colors">Portfolio</a></li>
-            <li><a href="https://mhamadkoussa.netlify.app/#certifications" class="text-gray-600 hover:text-primary transition-colors">Certifications</a></li>
-            <li><a href="https://mhamadkoussa.netlify.app/#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
-          </ul>
-        </nav>
-        <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600">
-          <i class="fas fa-bars text-xl"></i>
-        </button>
-      </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden p-6">
-      <div class="flex justify-between items-center mb-8">
-        <div class="text-xl font-bold">Menu</div>
-        <button id="close-menu" class="text-gray-600">
-          <i class="fas fa-times text-2xl"></i>
-        </button>
-      </div>
-      <nav>
-        <ul class="space-y-6 text-lg">
-          <li><a href="https://mhamadkoussa.netlify.app/#hero" class="block py-2 hover:text-primary transition-colors">Home</a></li>
-          <li><a href="https://mhamadkoussa.netlify.app/#about" class="block py-2 hover:text-primary transition-colors">About</a></li>
-          <li><a href="https://mhamadkoussa.netlify.app/#projects" class="block py-2 hover:text-primary transition-colors">Projects</a></li>
-          <li><a href="https://mhamadkoussa.netlify.app/#certifications" class="block py-2 hover:text-primary transition-colors">Certifications</a></li>
-          <li><a href="https://mhamadkoussa.netlify.app/#contact" class="block py-2 hover:text-primary transition-colors">Contact</a></li>
+<link
+rel="icon"
+type="image/png"
+href="https://i.postimg.cc/htq890YQ/Your-idea-1.png"
+/>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#6b8cae", secondary: "#a3c1d9" },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+    },
+  },
+};
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+rel="stylesheet"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@300;400;500;600&display=swap"
+rel="stylesheet"
+/>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+}
+.retro-text {
+  font-family: 'Space Mono', monospace;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.retro-border {
+  border: 2px solid #6b8cae;
+}
+</style>
+  <!-- Navigation -->
+  <header class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-gray-800">Mhamad Koussa</a>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="https://mhamadkoussa.netlify.app/#hero" class="text-gray-600 hover:text-primary transition-colors">Home</a></li>
+          <li><a href="https://mhamadkoussa.netlify.app/#about" class="text-gray-600 hover:text-primary transition-colors">About</a></li>
+          <li><a href="https://mhamadkoussa.netlify.app/#projects" class="text-gray-600 hover:text-primary transition-colors">Portfolio</a></li>
+          <li><a href="https://mhamadkoussa.netlify.app/#certifications" class="text-gray-600 hover:text-primary transition-colors">Certifications</a></li>
+          <li><a href="https://mhamadkoussa.netlify.app/#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
         </ul>
       </nav>
+      <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
     </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="pt-24 pb-16">
-      <div class="container mx-auto px-4">
-        <h1 class="retro-text text-4xl md:text-5xl font-bold text-center mb-4">My Projects</h1>
-        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-         All new and old projects will be posted here.
-        </p>
-
-        <!-- Projects Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-            <div class="h-48 bg-gray-200 overflow-hidden">
-              <img src="https://i.postimg.cc/MTqKndK2/image.png" alt="Project 1" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Gifts By Nisrine</h3>
-              <p class="text-gray-600 mb-4">An e-store that shows what Gifts By Nisrine sells, etc.</p>
-             
-              <div class="flex space-x-3">
-                <a href="https://rast0fx.github.io/GiftsByNisrine/" class="text-primary hover:underline">View Project</a>
-              
-              </div>
-            </div>
-          </div>
- <!-- Project  -->
- <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-    <div class="h-48 bg-gray-200 overflow-hidden">
-      <img src="https://i.postimg.cc/02WfZBLn/image.png" alt="Project 1" class="w-full h-full object-cover">
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden p-6">
+    <div class="flex justify-between items-center mb-8">
+      <div class="text-xl font-bold">Menu</div>
+      <button id="close-menu" class="text-gray-600">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
     </div>
-    <div class="p-6">
-      <h3 class="text-xl font-semibold mb-2">SharpVision</h3>
-      <p class="text-gray-600 mb-4">A website made for a Roblox development group.</p>
-     
-      <div class="flex space-x-3">
-        <a href="https://www.sharpvision.io/" class="text-primary hover:underline">View Project</a>
-      
-      </div>
-    </div>
+    <nav>
+      <ul class="space-y-6 text-lg">
+        <li><a href="https://mhamadkoussa.netlify.app/#hero" class="block py-2 hover:text-primary transition-colors">Home</a></li>
+        <li><a href="https://mhamadkoussa.netlify.app/#about" class="block py-2 hover:text-primary transition-colors">About</a></li>
+        <li><a href="https://mhamadkoussa.netlify.app/#projects" class="block py-2 hover:text-primary transition-colors">Projects</a></li>
+        <li><a href="https://mhamadkoussa.netlify.app/#certifications" class="block py-2 hover:text-primary transition-colors">Certifications</a></li>
+        <li><a href="https://mhamadkoussa.netlify.app/#contact" class="block py-2 hover:text-primary transition-colors">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-          <!-- Project 2 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-            <div class="h-48 bg-gray-200 overflow-hidden">
-              <img src="https://i.postimg.cc/PxVsd4CM/image.png" alt="Project 2" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Swift's USAF</h3>
-              <p class="text-gray-600 mb-4">A website showcasing the United State's Air Force, owned by Swift on Roblox.</p>
-   
-              <div class="flex space-x-3">
-                <a href="https://rast0fx.github.io/Swifts-USAF/" class="text-primary hover:underline">View Project</a>
-              
-              </div>
-            </div>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-16">
+    <div class="container mx-auto px-4">
+      <h1 class="retro-text text-4xl md:text-5xl font-bold text-center mb-4">My Projects</h1>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+       All new and old projects will be posted here.
+      </p>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: Gifts By Nisrine -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/MTqKndK2/image.png" alt="Gifts By Nisrine" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
-          <!-- Project 3-->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-            <div class="h-48 bg-gray-200 overflow-hidden">
-              <img src="https://i.postimg.cc/Fz0M0QPT/image.png" alt="Project 2" class="w-full h-full object-cover">
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">Gifts By Nisrine</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">E-commerce</span>
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Qamar's Portfolio</h3>
-              <p class="text-gray-600 mb-4">A portfolio for a Roblox clothing designer.</p>
-           
-              <div class="flex space-x-3">
-                <a href="https://rast0fx.github.io/Qamar-Portfolio/" class="text-primary hover:underline">View Project</a>
-              
-              </div>
-            </div>
-          </div>
-           <!-- Project 4-->
-           <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-            <div class="h-48 bg-gray-200 overflow-hidden">
-              <img src="https://i.postimg.cc/CxcWG7Np/image.png" alt="Project 2" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Leader's Portfolio</h3>
-              <p class="text-gray-600 mb-4">A portfolio for a blender 3D Artist & Modeler.</p>
-           
-              <div class="flex space-x-3">
-                <a href="https://rast0fx.github.io/leaderportfolio/?section=landing" class="text-primary hover:underline">View Project</a>
-               
-              </div>
-            </div>
-          </div>
-          <!-- Project 5-->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
-            <div class="h-48 bg-gray-200 overflow-hidden">
-              <img src="https://i.postimg.cc/CMCrCJhr/image.png" alt="Project 3" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Marco's Portfolio</h3>
-              <p class="text-gray-600 mb-4">A random portfolio for a client.</p>
-             
-              <div class="flex space-x-3">
-                <a href="https://rast0fx.github.io/marco/" class="text-primary hover:underline">View Project</a>
-              
-              </div>
+            <p class="text-gray-700 mb-4">An elegant e-commerce platform showcasing handcrafted gifts and products by Nisrine. Features product categories, detailed item views, and a clean, user-friendly interface.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://rast0fx.github.io/GiftsByNisrine/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
             </div>
           </div>
         </div>
 
-        <div class="text-center mt-12">
-          <a href="https://mhamadkoussa.netlify.app/" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-colors">
-            <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
-          </a>
+        <!-- Project 2: SharpVision -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/02WfZBLn/image.png" alt="SharpVision" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">SharpVision</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Gaming</span>
+            </div>
+            <p class="text-gray-700 mb-4">A professional website for a Roblox development group, featuring their portfolio, services, and contact information with a modern, tech-focused design.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://www.sharpvision.io/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Swift's USAF -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/PxVsd4CM/image.png" alt="Swift's USAF" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">Swift's USAF</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Gaming</span>
+            </div>
+            <p class="text-gray-700 mb-4">An immersive website for a United States Air Force roleplay group in Roblox, featuring unit information, recruitment details, and interactive elements.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://rast0fx.github.io/Swifts-USAF/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Qamar's Portfolio -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/Fz0M0QPT/image.png" alt="Qamar's Portfolio" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">Qamar's Portfolio</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Portfolio</span>
+            </div>
+            <p class="text-gray-700 mb-4">A sleek portfolio website for a Roblox clothing designer, showcasing their designs, creative process, and contact information with a clean, modern aesthetic.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://rast0fx.github.io/Qamar-Portfolio/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Leader's Portfolio -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/CxcWG7Np/image.png" alt="Leader's Portfolio" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">Leader's Portfolio</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">3D Art</span>
+            </div>
+            <p class="text-gray-700 mb-4">A portfolio website for a 3D artist and modeler, featuring their work, skills, and contact information with a focus on visual presentation and user experience.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://rast0fx.github.io/leaderportfolio/?section=landing" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Marco's Portfolio -->
+        <div class="project-card bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:shadow-lg transition-all duration-300">
+          <div class="h-48 overflow-hidden border-b-2 border-blue-600">
+            <img src="https://i.postimg.cc/CMCrCJhr/image.png" alt="Marco's Portfolio" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-blue-800">Marco's Portfolio</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Portfolio</span>
+            </div>
+            <p class="text-gray-700 mb-4">A clean, professional portfolio website designed to showcase work and skills with a focus on simplicity and user experience across all devices.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://rast0fx.github.io/marco/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                View Project <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+              <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-white py-8 border-t border-gray-100">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-600">© 2025 Mhamad Koussa. All rights reserved.</p>
+      <div class="text-center mt-12">
+        <a href="https://mhamadkoussa.netlify.app/" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-colors">
+          <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+        </a>
       </div>
-    </footer>
+    </div>
+  </main>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
+  <!-- Footer -->
+  <footer class="bg-white py-8 border-t border-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-600"> 2025 Mhamad Koussa. All rights reserved.</p>
+    </div>
+  </footer>
 
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-      });
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
 
-      closeMenu.addEventListener('click', () => {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('#mobile-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
         document.body.style.overflow = 'auto';
       });
-
-      // Close menu when clicking on a link
-      const navLinks = document.querySelectorAll('#mobile-menu a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          document.body.style.overflow = 'auto';
-        });
-      });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
